@@ -2,7 +2,11 @@ Cassandra in Docker
 ===
 
 This repository provides everything you need to run Cassandra in Docker, and is tuned for fast
-container startup.
+container startup. 
+
+Based on java/oracle-java7 (Ubuntu) .
+
+Version of Cassandra is 2.1.2 .
 
 Why?
 ---

@@ -5,7 +5,7 @@
 # Expects CASSANDRA_SEEDS
 # If CASSANDRA_SEEDS is not set, node acts as its own seed
 
-FROM cassandra-base
+FROM emilianobonassi/cassandra:base
 
 USER root
 

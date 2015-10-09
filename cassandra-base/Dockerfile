@@ -10,8 +10,7 @@ FROM emilianobonassi/oracle-java:7
 ENV DEBIAN_FRONTEND noninteractive
 
 # Add DataStax sources
-ADD datastax_key /tmp/datastax_key
-RUN apt-key add /tmp/datastax_key
+RUN curl -L http://debian.datastax.com/debian/repo_key | sudo apt-key add -
 RUN echo "deb http://debian.datastax.com/community stable main" > /etc/apt/sources.list.d/datastax.list
 
 # Workaround for https://github.com/docker/docker/issues/6345
